@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6362A2C1AEF84DE00A2D4C7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6362A2B1AEF84DE00A2D4C7 /* ButtonView.swift */; };
+		B6ACF1471AE7CD0F00E65024 /* CircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6ACF1461AE7CD0F00E65024 /* CircularProgressView.m */; };
 		B6B96F961AE13A0D00AADDE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B96F951AE13A0D00AADDE2 /* main.m */; };
 		B6B96F991AE13A0D00AADDE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B96F981AE13A0D00AADDE2 /* AppDelegate.m */; };
 		B6B96F9C1AE13A0D00AADDE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B96F9B1AE13A0D00AADDE2 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B6362A2A1AEF84DD00A2D4C7 /* CircularProgressBarDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CircularProgressBarDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6362A2B1AEF84DE00A2D4C7 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B6ACF1451AE7CD0F00E65024 /* CircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularProgressView.h; sourceTree = "<group>"; };
+		B6ACF1461AE7CD0F00E65024 /* CircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularProgressView.m; sourceTree = "<group>"; };
 		B6B96F901AE13A0D00AADDE2 /* CircularProgressBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircularProgressBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B96F941AE13A0D00AADDE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B96F951AE13A0D00AADDE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,10 +91,14 @@
 				B6B96F981AE13A0D00AADDE2 /* AppDelegate.m */,
 				B6B96F9A1AE13A0D00AADDE2 /* ViewController.h */,
 				B6B96F9B1AE13A0D00AADDE2 /* ViewController.m */,
+				B6362A2B1AEF84DE00A2D4C7 /* ButtonView.swift */,
+				B6ACF1451AE7CD0F00E65024 /* CircularProgressView.h */,
+				B6ACF1461AE7CD0F00E65024 /* CircularProgressView.m */,
 				B6B96F9D1AE13A0D00AADDE2 /* Main.storyboard */,
 				B6B96FA01AE13A0D00AADDE2 /* Images.xcassets */,
 				B6B96FA21AE13A0D00AADDE2 /* LaunchScreen.xib */,
 				B6B96F931AE13A0D00AADDE2 /* Supporting Files */,
+				B6362A2A1AEF84DD00A2D4C7 /* CircularProgressBarDemo-Bridging-Header.h */,
 			);
 			path = CircularProgressBarDemo;
 			sourceTree = "<group>";
@@ -221,6 +231,8 @@
 			files = (
 				B6B96F9C1AE13A0D00AADDE2 /* ViewController.m in Sources */,
 				B6B96F991AE13A0D00AADDE2 /* AppDelegate.m in Sources */,
+				B6362A2C1AEF84DE00A2D4C7 /* ButtonView.swift in Sources */,
+				B6ACF1471AE7CD0F00E65024 /* CircularProgressView.m in Sources */,
 				B6B96F961AE13A0D00AADDE2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,9 +355,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CircularProgressBarDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CircularProgressBarDemo/CircularProgressBarDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -353,9 +368,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CircularProgressBarDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CircularProgressBarDemo/CircularProgressBarDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -412,6 +429,7 @@
 				B6B96FB51AE13A0D00AADDE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6B96FB61AE13A0D00AADDE2 /* Build configuration list for PBXNativeTarget "CircularProgressBarDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +438,7 @@
 				B6B96FB81AE13A0D00AADDE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
